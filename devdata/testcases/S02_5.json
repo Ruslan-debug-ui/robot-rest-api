@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "is_active": {
+        "type": "boolean"
+      },
+      "is_online": {
+        "type": "boolean"
+      },
+      "last_active": {
+        "type": "string"
+      },
+      "last_app_version": {
+        "type": "string"
+      },
+      "last_device_id": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "is_active",
+      "is_online",
+      "last_active",
+      "last_app_version",
+      "last_device_id"
+    ]
+  }

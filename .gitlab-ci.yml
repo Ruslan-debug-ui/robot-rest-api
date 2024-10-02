@@ -1,0 +1,29 @@
+stages:
+  - autotests-run
+
+image: python:3.7.5
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - python -V  # Print out python version for debugging
+  - curl -o rcc https://downloads.robocorp.com/rcc/releases/latest/linux64/rcc
+  - chmod a+x rcc
+  - git submodule sync --recursive
+  - git submodule update --init --recursive
+
+run:
+  stage: autotests-run
+  tags:
+    - autotest
+    - huawei
+  script:
+    - echo Start TV Index API tests
+    - ./rcc task run
+  artifacts:
+    when: always
+    paths:
+      - output/*

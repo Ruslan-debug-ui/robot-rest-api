@@ -1,0 +1,183 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "count": {
+            "type": "integer"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "role": {
+                        "type": "string"
+                    },
+                    "household_id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "settings": {
+                        "type": "object",
+                        "properties": {
+                            "upload_url": {
+                                "type": "string"
+                            },
+                            "time_url": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "description": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "is_active": {
+                        "type": "boolean"
+                    },
+                    "is_synced": {
+                        "type": "boolean"
+                    },
+                    "meter_settings": {
+                        "type": "object",
+                        "properties": {
+                            "plug_power_threshold_lo": {
+                                "type": [
+                                    "number",
+                                    "string"
+                                ]
+                            },
+                            "plug_power_threshold_hi": {
+                                "type": "number"
+                            },
+                            "no_viewers_mode_max_duration": {
+                                "type": "number"
+                            },
+                            "check_viewers_remind_freq": {
+                                "type": "number"
+                            },
+                            "register_remind_freq_0": {
+                                "type": "number"
+                            },
+                            "register_remind_period_0": {
+                                "type": "number"
+                            },
+                            "register_remind_freq_1": {
+                                "type": "number"
+                            },
+                            "register_remind_period_1": {
+                                "type": "number"
+                            },
+                            "unregister_all_delay": {
+                                "type": "number"
+                            },
+                            "warning_remind_freq": {
+                                "type": "number"
+                            },
+                            "register_remind_delay": {
+                                "type": "number"
+                            }
+                        },
+                        "additionalProperties": false
+                    },
+                    "id": {
+                        "type": "integer"
+                    },
+                    "username": {
+                        "type": "string"
+                    },
+                    "group_id": {
+                        "type": [
+                            "null",
+                            "integer"
+                        ]
+                    },
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "type": "string"
+                    },
+                    "devices": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "device_id": {
+                                    "type": [
+                                        "null",
+                                        "integer"
+                                    ]
+                                },
+                                "guid": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "integer"
+                                },
+                                "created_at": {
+                                    "type": "string"
+                                },
+                                "updated_at": {
+                                    "type": "string"
+                                }
+                            },
+                            "additionalProperties": false,
+                            "required": [
+                                "guid",
+                                "id",
+                                "created_at",
+                                "updated_at"
+                            ]
+                        }
+                    },
+                    "last_active": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "last_app_version": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "last_device_id": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "is_online": {
+                        "type": "boolean"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "role",
+                    "settings",
+                    "is_active",
+                    "is_synced",
+                    "meter_settings",
+                    "id",
+                    "username",
+                    "created_at",
+                    "updated_at",
+                    "devices",
+                    "is_online"
+                ]
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "count",
+        "items"
+    ]
+}

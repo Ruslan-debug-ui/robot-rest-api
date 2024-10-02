@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "panelist_name": {
+            "type": "string"
+        },
+        "number": {
+            "type": "integer"
+        },
+        "household_id": {
+            "type": "integer"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "created_at": {
+            "type": "string"
+        },
+        "updated_at": {
+            "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "panelist_name",
+        "number",
+        "household_id",
+        "id",
+        "created_at",
+        "updated_at"
+    ]
+}

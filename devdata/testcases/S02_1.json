@@ -1,0 +1,435 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "role": {
+        "type": "string"
+      },
+      "household_id": {
+        "type": "integer"
+      },
+      "settings": {
+        "type": "object",
+        "properties": {
+          "upload_url": {
+            "type": "string"
+          },
+          "time_url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "upload_url",
+          "time_url"
+        ]
+      },
+      "description": {
+        "type": "string"
+      },
+      "is_active": {
+        "type": "boolean"
+      },
+      "is_synced": {
+        "type": "boolean"
+      },
+      "meter_settings": {
+        "type": "object",
+        "properties": {
+          "plug_power_threshold_lo": {
+            "type": "number"
+          },
+          "plug_power_threshold_hi": {
+            "type": "number"
+          },
+          "no_viewers_mode_max_duration": {
+            "type": "integer"
+          },
+          "check_viewers_remind_freq": {
+            "type": "integer"
+          },
+          "register_remind_freq_0": {
+            "type": "integer"
+          },
+          "register_remind_period_0": {
+            "type": "integer"
+          },
+          "register_remind_freq_1": {
+            "type": "integer"
+          },
+          "register_remind_period_1": {
+            "type": "integer"
+          },
+          "unregister_all_delay": {
+            "type": "integer"
+          },
+          "warning_remind_freq": {
+            "type": "integer"
+          },
+          "register_remind_delay": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "plug_power_threshold_lo",
+          "plug_power_threshold_hi",
+          "no_viewers_mode_max_duration",
+          "check_viewers_remind_freq",
+          "register_remind_freq_0",
+          "register_remind_period_0",
+          "register_remind_freq_1",
+          "register_remind_period_1",
+          "unregister_all_delay",
+          "warning_remind_freq",
+          "register_remind_delay"
+        ]
+      },
+      "id": {
+        "type": "integer"
+      },
+      "username": {
+        "type": "string"
+      },
+      "group_id": {
+        "type": "integer"
+      },
+      "created_at": {
+        "type": "string"
+      },
+      "updated_at": {
+        "type": "string"
+      },
+      "devices": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          },
+          {
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "integer"
+              },
+              "guid": {
+                "type": "string"
+              },
+              "id": {
+                "type": "integer"
+              },
+              "created_at": {
+                "type": "string"
+              },
+              "updated_at": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "guid",
+              "id",
+              "created_at",
+              "updated_at"
+            ]
+          }
+        ]
+      },
+      "last_active": {
+        "type": "string"
+      },
+      "last_app_version": {
+        "type": "string"
+      },
+      "last_device_id": {
+        "type": "string"
+      },
+      "is_online": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "role",
+      "household_id",
+      "settings",
+      "description",
+      "is_active",
+      "is_synced",
+      "meter_settings",
+      "id",
+      "username",
+      "group_id",
+      "created_at",
+      "updated_at",
+      "devices",
+      "last_active",
+      "last_app_version",
+      "last_device_id",
+      "is_online"
+    ]
+  }

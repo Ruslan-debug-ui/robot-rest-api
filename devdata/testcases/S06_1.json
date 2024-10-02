@@ -1,0 +1,173 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "count": {
+            "type": "integer"
+        },
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "recipient_type": {
+                        "type": "string"
+                    },
+                    "recipient": {
+                        "type": "string"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "app": {
+                        "type": "string"
+                    },
+                    "service": {
+                        "type": "string"
+                    },
+                    "data": {
+                        "type": "object",
+                        "properties": {
+                            "type": {
+                                "type": [
+                                    "string",
+                                    "integer"
+                                ]
+                            },
+                            "id": {
+                                "type": [
+                                    "string",
+                                    "null"
+                                ]
+                            },
+                            "timestamp": {
+                                "type": [
+                                    "null",
+                                    "integer"
+                                ]
+                            },
+                            "target": {
+                                "type": "string"
+                            },
+                            "body": {
+                                "type": "string"
+                            },
+                            "options": {
+                                "type": "object",
+                                "properties": {
+                                    "type": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "additionalProperties": false,
+                                "required": [
+                                    "type"
+                                ]
+                            },
+                            "title": {
+                                "type": "string"
+                            },
+                            "data_body": {
+                                "type": "object",
+                                "properties": {
+                                    "message": {
+                                        "type": "string"
+                                    },
+                                    "message_data": {
+                                        "type": "object",
+                                        "properties": {
+                                            "type": {
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "additionalProperties": false
+                                    }
+                                },
+                                "additionalProperties": false,
+                                "required": [
+                                    "message",
+                                    "message_data"
+                                ]
+                            },
+                            "msg": {
+                                "type": "object",
+                                "properties": {
+                                    "text": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    }
+                                },
+                                "additionalProperties": false,
+                                "required": [
+                                    "text",
+                                    "title"
+                                ]
+                            },
+                            "subtype": {
+                                "type": "string"
+                            }
+                        },
+                        "additionalProperties": false,
+                        "required": [
+                            "type"
+                        ]
+                    },
+                    "title": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "body": {
+                        "type": [
+                            "null",
+                            "string"
+                        ]
+                    },
+                    "uuid": {
+                        "type": "string"
+                    },
+                    "created_at": {
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "type": "string"
+                    },
+                    "is_sent": {
+                        "type": "boolean"
+                    },
+                    "read_cnt": {
+                        "type": "integer"
+                    },
+                    "vendor_id": {
+                        "type": [
+                            "string",
+                            "null"
+                        ]
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "recipient_type",
+                    "recipient",
+                    "type",
+                    "app",
+                    "service",
+                    "data",
+                    "uuid",
+                    "created_at",
+                    "updated_at",
+                    "is_sent",
+                    "read_cnt"
+                ]
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "count",
+        "items"
+    ]
+}

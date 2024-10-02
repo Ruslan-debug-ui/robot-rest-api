@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "role": {
+        "type": "string"
+      },
+      "household_id": {
+        "type": "null"
+      },
+      "settings": {
+        "type": "object"
+      },
+      "description": {
+        "type": "null"
+      },
+      "is_active": {
+        "type": "boolean"
+      },
+      "is_synced": {
+        "type": "boolean"
+      },
+      "meter_settings": {
+        "type": "object"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "username": {
+        "type": "string"
+      },
+      "group_id": {
+        "type": "null"
+      },
+      "created_at": {
+        "type": "string"
+      },
+      "updated_at": {
+        "type": "string"
+      },
+      "devices": {
+        "type": "array",
+        "items": {}
+      },
+      "last_active": {
+        "type": "string"
+      },
+      "last_app_version": {
+        "type": "null"
+      },
+      "last_device_id": {
+        "type": "null"
+      },
+      "is_online": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "role",
+      "household_id",
+      "settings",
+      "description",
+      "is_active",
+      "is_synced",
+      "meter_settings",
+      "id",
+      "username",
+      "group_id",
+      "created_at",
+      "updated_at",
+      "devices",
+      "last_active",
+      "last_app_version",
+      "last_device_id",
+      "is_online"
+    ]
+  }

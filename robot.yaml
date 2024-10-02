@@ -1,0 +1,14 @@
+tasks:
+  Run tests:
+      shell: python -m pabot.pabot --processes 19 --report NONE --outputdir ./output --consolecolors ansi .
+
+
+condaConfigFile: conda.yaml
+ignoreFiles:
+  - .gitignore
+artifactsDir: output
+PATH:
+  - ./output
+PYTHONPATH:
+  - keywords
+  - variables
